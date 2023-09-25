@@ -1,16 +1,16 @@
-## calibre-douban
-Calibre douban metadata download plugin.
-Based on https://book.douban.com web pages.
-
-### Calibre插件
-
-最近在使用calibre-web管理电子书，不过很多时候还是需要用到Calibre桌面版软件，批量管理，编辑电子书等功能，在calibre-web上已经使用calibre-web-douban-api搜素豆瓣元数据，但是桌面版Calibre软件缺没有办法使用，不过calibre可以使用插件，而且是使用python开发，因此可以把calibre-web-douban-api改造一下包装成calibre插件，简单元数据插件还是比较容易的
+## calibre-qidian
+Calibre 起点书籍信息和封面下载插件
+部分代码基于 [calibre-douban](https://github.com/fugary/calibre-douban)
 
 ### 安装方法
 
-下载地址：https://github.com/fugary/calibre-douban/releases
+下载地址：https://github.com/aiden0w0/calibre-qidian/releases
 
-从release页面下载zip包，然后再calibre中安装为插件即可。
+* release页面下载zip包
+* calibre中选择首选项 > 插件 > 从文件加载插件
 
-参考文档：https://fugary.com/?p=423
+### 使用方法
 
+* 你的书籍必须有标题，作者或标识符```qidian: qidian_id```中的一种
+* 在calibre中选择一个或多个书籍 > 右键 > 下载元数据和封面
+* 在下载完成后重复第一步 （这是因为搜索页面不会返回格式化的简介和标签）
